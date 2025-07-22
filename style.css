@@ -61,7 +61,7 @@ header nav .container .logo a::after{
     border: none;
     font-weight: bold;
  }
- header .container .btn:hover{
+ header .container .btn:hover , .hero .container .btn:hover{
     background-color: var(--primary-color);
  }
  /* main Hero */
@@ -80,5 +80,68 @@ header nav .container .logo a::after{
 .hero .container .row .col-md-6 p{
     font-size: 20px;
     color: rgb(119, 118, 118);
-    font
 }
+.hero .container .btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+ }
+ /* a propos */
+ .a-propos .container .titre .col h2 , 
+ .service .container  .col h2{
+    position: relative;
+    color: var(--titre-color);
+    font-size: 40px;
+    font-weight: bold;
+ }
+  .a-propos .container .titre .col h2::after , 
+  .service .container  .col h2::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    border: 3px solid var(--secondary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .a-propos .container .titre .col p{
+    color: rgb(119, 118, 118);
+    font-size: 20px;
+ }
+  .a-propos .container .info .col {
+    background-color:#eaa64d6e;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 0;
+  }
+  .a-propos .container .info .col h2{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .a-propos .container .info .col p{
+    color: #fff;
+    font-size: 20px;
+  }
+  .a-propos .container .info .col_blue{
+    background-color: #0d5fa666;
+  }
+/* Service */
+.service .container .service_info .col-lg-4 {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(119, 118, 118, 0.142);
+}
+.service .container .service_info .col-lg-4 h1 strong{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.service .container .service_info .col-lg-4 p{
+    font-size: 17px;
+    color: rgb(119, 118, 118);
+}
+
