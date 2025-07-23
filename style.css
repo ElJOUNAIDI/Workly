@@ -1,147 +1,256 @@
 /* css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* global css */
 :root {
-    --primary-color: #A16D28;
-    --secondary-color: #EAA64D;
-    --titre-color: #0D5EA6;
-    --text-color: #333;
-    --background-color: #0D5EA6;
+  --primary-color: #a16d28;
+  --secondary-color: #eaa64d;
+  --titre-color: #0d5ea6;
+  --text-color: #333;
+  --background-color: #0d5ea6;
 }
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 /* Header */
 header .barre {
-    height: 40px;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 0;
+  height: 40px;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 0;
 }
-strong{
-    color: var(--text-color);
+strong {
+  color: var(--text-color);
 }
 /* nav */
-header nav{
-    font-weight: bold;
+header nav {
+  font-weight: bold;
 }
 header nav .container .logo {
-    position: relative;
+  position: relative;
 }
-header nav .container .logo a{
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--titre-color);
+header nav .container .logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--titre-color);
 }
-.navbar-nav li a{
-    color: red;
+.navbar-nav li a {
+  color: red;
 }
 /* header nav .container ul li a{
     color: var(--text-color);
 } */
-header nav .container .logo a::after{
-    content: "";
-    position: absolute;
-    /* height: 10px; */
-    border: 5px solid var(--secondary-color);
-    border-radius: 20px;
-    bottom: 0;
-    left: -1;
+header nav .container .logo a::after {
+  content: "";
+  position: absolute;
+  /* height: 10px; */
+  border: 5px solid var(--secondary-color);
+  border-radius: 20px;
+  bottom: 0;
+  left: -1;
 }
- header .container .btn{
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
- }
- header .container .btn:hover , .hero .container .btn:hover{
-    background-color: var(--primary-color);
- }
- /* main Hero */
- section{
-    padding: 40px 0;
- }
-.hero .container .row .col-md-6 img{
-    height: 400px;
-    background-size: cover;
+header .container .btn,
+.pack_info .prix .btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
 }
-.hero .container .row .col-md-6 h1{
-    color: var(--secondary-color);
-     font-size: 40px;
-     font-weight: bold;
+header .container .btn:hover,
+.hero .container .btn:hover,
+.pack_info .prix .btn:hover {
+  background-color: var(--primary-color);
 }
-.hero .container .row .col-md-6 p{
-    font-size: 20px;
-    color: rgb(119, 118, 118);
+/* main Hero */
+section {
+  padding: 40px 0;
 }
-.hero .container .btn{
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
- }
- /* a propos */
- .a-propos .container .titre .col h2 , 
- .service .container  .col h2{
-    position: relative;
-    color: var(--titre-color);
-    font-size: 40px;
-    font-weight: bold;
- }
-  .a-propos .container .titre .col h2::after , 
-  .service .container  .col h2::after{
-    position: absolute;
-    content: "";
-    width: 100px;
-    border: 3px solid var(--secondary-color);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
- }
- .a-propos .container .titre .col p{
-    color: rgb(119, 118, 118);
-    font-size: 20px;
- }
-  .a-propos .container .info .col {
-    background-color:#eaa64d6e;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 0;
-  }
-  .a-propos .container .info .col h2{
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .a-propos .container .info .col p{
-    color: #fff;
-    font-size: 20px;
-  }
-  .a-propos .container .info .col_blue{
-    background-color: #0d5fa666;
-  }
+.hero .container .row .col-md-6 img {
+  height: 400px;
+  background-size: cover;
+}
+.hero .container .row .col-md-6 h1 {
+  color: var(--secondary-color);
+  font-size: 40px;
+  font-weight: bold;
+}
+.hero .container .row .col-md-6 p {
+  font-size: 20px;
+  color: rgb(119, 118, 118);
+}
+.hero .container .btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+}
+/* a propos */
+.a-propos .container .titre .col h2,
+.service .container .col h2,
+.offre .container .row .col h2,
+.secteur .container .row .col h2 ,
+.avis .container .row .col h2 {
+  position: relative;
+  color: var(--titre-color);
+  font-size: 40px;
+  font-weight: bold;
+}
+.a-propos .container .titre .col h2::after,
+.service .container .col h2::after,
+.offre .container .row .col h2::after,
+.secteur .container .row .col h2::after,
+.avis .container .row .col h2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  border: 3px solid var(--secondary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.a-propos .container .titre .col p {
+  color: rgb(119, 118, 118);
+  font-size: 20px;
+}
+.a-propos .container .info .col {
+  background-color: #eaa64d6e;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 0;
+}
+.a-propos .container .info .col h2 {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.a-propos .container .info .col p {
+  color: #fff;
+  font-size: 20px;
+}
+.a-propos .container .info .col_blue {
+  background-color: #0d5fa666;
+}
 /* Service */
 .service .container .service_info .col-lg-4 {
-    border-radius: 10px;
-    padding: 20px;
-    background-color: rgba(119, 118, 118, 0.142);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(119, 118, 118, 0.142);
 }
-.service .container .service_info .col-lg-4 h1 strong{
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--secondary-color);
+.service .container .service_info .col-lg-4 h1 strong {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
-.service .container .service_info .col-lg-4 p{
-    font-size: 17px;
-    color: rgb(119, 118, 118);
+.service .container .service_info .col-lg-4 p {
+  font-size: 17px;
+  color: rgb(119, 118, 118);
 }
 
+/* Offre */
+.offre .container .info_offre .row .col-lg-3 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #0d5fa666;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+.offre .container .info_offre .row .col-lg-3 {
+  background-color: #ececec;
+  position: relative;
+}
+.offre .container .info_offre .row .col-lg-3::after {
+  position: absolute;
+  content: "niveua1";
+  font-weight: bold;
+  color: #fff;
+  width: 60px;
+  background-color: red;
+  bottom: 90%;
+  left: 2%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.offre .container .info_offre .row .col-lg-3 p {
+  font-size: 14px;
+  color: black;
+}
+.pack_info div {
+  display: flex;
+  gap: 10px;
+}
+.pack_info div i {
+  color: green;
+}
+.pack_info .prix h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.pack_info .prix .btn {
+  margin-bottom: 20px;
+}
+.pack_info .prix .text-prix {
+  color: red;
+}
+/* Secteur d'activités */
+/* animation slide logo */
+@keyframes slider-logo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }  
+}
+.secteur .container .carousel-logo{
+    width: 500px;
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.secteur .container .carousel-logo .img{
+    display: inline-block;
+    margin: 0 10px;
+    animation: slider-logo 20s infinite linear ;
+}
+.secteur .container .carousel-logo:hover .img {
+  animation-play-state: paused;
+
+}
+.secteur .container .carousel-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+/* Ils nous ont fait confiance */
+.avis .container .row .card {
+    justify-content: center;
+}
+.avis .container .row .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.avis .container .row .card .card-body h5{
+    font-weight: bold;
+}
+.avis .container .row .card .card-body p {
+  font-size: 14px;
+  text-align: start;
+  color: rgb(119, 118, 118);
+}
