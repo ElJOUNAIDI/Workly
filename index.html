@@ -19,28 +19,8 @@
 
 <body body data-bs-spy="scroll" data-bs-target="nav">
     <!-- Header -->
-    <header class="sticky-top" >
-        <!-- Barre  -->
-        <!-- <div class="barre pb-2">
-            <div class="container-fluid">
-                <div class="row justify-content-around align-items-center ">
-                    <div class="col-3 d-flex justify-content-center ">
-                        <strong>Email : </strong>
-                        <p class="ms-1"> oussama@gmail.com</p>
-                    </div>
-                    <div class="col-3 d-flex justify-content-center">
-                        <strong>Contact : </strong>
-                        <p class="ms-1"> +216 55 55 55</p>
-                    </div>
-                    <div class="col-3 d-flex justify-content-center">
-                        <strong>Adresse : </strong>
-                        <p class="ms-1"> Casablanca</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="logo">
                     <a class="navbar-brand" href="#">Workly</a>
@@ -73,10 +53,11 @@
     <!-- Main -->
     <main>
         <!-- Hero -->
-        <section id="hero" class="hero">
+        <section id="hero" class="hero overflow-hidden">
             <div class="container">
                 <div class="row justify-content-around align-items-center">
-                    <div data-aos="fade-right" class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div data-aos="fade-right"
+                        class="col-md-6 d-flex flex-column justify-content-center align-items-center">
                         <h1 class="text-center">Agence de communicationet marketing digital</h1>
                         <p class="text-center">Découvrez nos Packs de Servicespour Booster Votre Entreprise</p>
                         <button data-aos="fade-right" data-aos-delay="700" class="btn">CONTACTEZ-NOUS</button>
@@ -86,7 +67,7 @@
                     </div>
         </section>
         <!--  a propos -->
-        <section id="a-propos" class="a-propos">
+        <section id="a-propos" class="a-propos overflow-hidden">
             <div class="container">
                 <div class="titre">
                     <div class="row">
@@ -126,7 +107,7 @@
             </div>
         </section>
         <!-- service -->
-        <section id="service" class="service">
+        <section id="service" class="service overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-center mb-5">
@@ -179,7 +160,7 @@
             </div>
         </section>
         <!-- Offres -->
-        <section id="offre" class="offre">
+        <section id="offre" class="offre overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-center mb-5">
@@ -281,7 +262,7 @@
             </div>
         </section>
         <!-- Secteur d'activités -->
-        <section id="secteur" class="secteur">
+        <section id="secteur" class="secteur overflow-hidden">
             <div class="container">
                 <div class="row d-flex flex-column">
                     <div class="col d-flex justify-content-center mb-5">
@@ -307,7 +288,7 @@
             </div>
         </section>
         <!-- Ils nous ont fait confiance -->
-        <section id="avis" class="avis">
+        <section id="avis" class="avis overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-center mb-5">
@@ -347,15 +328,16 @@
             </div>
         </section>
         <!-- Contact -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-center ">
                         <h2>Contactez-nous</h2>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" class="form_contact mt-5">
-                        <form action="" method="post" class="w-50 m-auto">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="w-50 m-auto">
                             <div class="mb-3 d-flex gap-3 justify-content-center">
+                                <input type="hidden" name="access_key" value="941373c7-3442-474f-bf43-844f27a26c7c">
                                 <div class="champ">
                                     <label for="name" class="form-label">Nom complet </label>
                                     <input type="text" class="form-control" id="name" name="name"
@@ -379,7 +361,7 @@
                                         placeholder="Entrez votre ville" required>
                                 </div>
                             </div>
-                            <button  type="submit" class="btn m-auto d-block">Envoyer</button>
+                            <button type="submit" class="btn m-auto d-block">Envoyer</button>
                         </form>
                     </div>
                 </div>
@@ -409,7 +391,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js -->
     <script src="main.js"></script>
-
+    <!--  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </body>
 
 </html>

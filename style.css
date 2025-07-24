@@ -170,6 +170,8 @@ section {
 .service .container .service_info .col-lg-3 {
   border-radius: 10px;
   padding: 20px;
+  border: 1px solid #6d6d6b;
+  transition: 0.5s;
 }
 .service .container .service_info .col-lg-3:hover {
   cursor: pointer;
