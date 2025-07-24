@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Workly</title>
 </head>
-<body>
+
+<body body data-bs-spy="scroll" data-bs-target="nav">
     <!-- Header -->
-     <header class="sticky-top">
+    <header class="sticky-top" >
         <!-- Barre  -->
-        <div class="barre pb-2">
+        <!-- <div class="barre pb-2">
             <div class="container-fluid">
                 <div class="row justify-content-around align-items-center ">
                     <div class="col-3 d-flex justify-content-center ">
@@ -32,147 +38,159 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <div class="logo">
-                <a class="navbar-brand" href="#">Workly</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">Workly</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto justify-content-center flex-fill  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Aceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offre">Offres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#secteur">Secteur d'activités </a>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto justify-content-center flex-fill  mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Aceuil</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Offres</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Secteur d'activités </a>
-                </li>
-            </ul>
-                <button class="btn">Contact</button>
-            </div>
-        </div>
         </nav>
-     </header>
-     <!-- Main -->
-     <main>
+    </header>
+    <!-- Main -->
+    <main>
         <!-- Hero -->
-         <section class="hero">
-             <div class="container">
-                 <div class="row justify-content-around align-items-center">
-                     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                         <h1 class="text-center">Agence de communicationet marketing digital</h1>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div data-aos="fade-right" class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="text-center">Agence de communicationet marketing digital</h1>
                         <p class="text-center">Découvrez nos Packs de Servicespour Booster Votre Entreprise</p>
-                        <button class="btn">CONTACTEZ-NOUS</button>
-                    </div>  
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                         <img class="img-fluid" src="./img/img/agence-de-communication-digitale.webp" alt="" srcset="">
-                    </div> 
-         </section>
-         <!--  a propos -->
-         <section class="a-propos">
-             <div class="container">
-                 <div class="titre">
+                        <button data-aos="fade-right" data-aos-delay="700" class="btn">CONTACTEZ-NOUS</button>
+                    </div>
+                    <div data-aos="fade-left" class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img class="img-fluid" src="./img/img/agence-de-communication-digitale.webp" alt="" srcset="">
+                    </div>
+        </section>
+        <!--  a propos -->
+        <section id="a-propos" class="a-propos">
+            <div class="container">
+                <div class="titre">
                     <div class="row">
-                     <div class="col  d-flex justify-content-center">
-                         <h2>Qui Sommes-Nous ?</h2>
-                     </div>
-                 </div>
-                 </div>
-                 <div class="info">
+                        <div class="col d-flex justify-content-center mb-5">
+                            <h2>Qui Sommes-Nous ?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
                     <div class="row flex-column">
-                        <div class="col mt-2">
+                        <div data-aos="fade-right" data-aos-delay="400" class="col mt-2">
                             <h2>
-                                <strong>WORKLY</strong> est une agence de communication dédiée à la croissance de ses clients.
-                                 Nous offrons des solutions personnalisées, une équipe passionnée 
-                                 et un engagement envers l’excellence pour propulser votre entreprise vers le succès
+                                <strong>WORKLY</strong> est une agence de communication dédiée à la croissance de ses
+                                clients.
+                                Nous offrons des solutions personnalisées, une équipe passionnée
+                                et un engagement envers l’excellence pour propulser votre entreprise vers le succès
                             </h2>
                         </div>
-                        <div class="col col_blue mt-2">
+                        <div data-aos="fade-left" data-aos-delay="500" class="col col_blue mt-2">
                             <h2>
                                 <strong>Nos Objectifs</strong><br>
-                                Chez Workly, notre objectif en tant que partenaire d'entreprise est de vous aider à atteindre de nouveaux sommets de succès. Nous avons conçu des packs sur mesure pour répondre à vos défis uniques.
+                                Chez Workly, notre objectif en tant que partenaire d'entreprise est de vous aider à
+                                atteindre de nouveaux sommets de succès. Nous avons conçu des packs sur mesure pour
+                                répondre à vos défis uniques.
                             </h2>
                         </div>
-                        <div class="col mt-2">
+                        <div data-aos="fade-right" data-aos-delay="600" class="col mt-2">
                             <h2>
                                 <strong>Nos expertise</strong><br>
-                                Chez Workly, notre objectif en tant que partenaire d'entreprise est de vous aider à atteindre de nouveaux sommets de succès. Nous avons conçu des packs sur mesure pour répondre à vos défis uniques.
+                                Chez Workly, notre objectif en tant que partenaire d'entreprise est de vous aider à
+                                atteindre de nouveaux sommets de succès. Nous avons conçu des packs sur mesure pour
+                                répondre à vos défis uniques.
                             </h2>
                         </div>
-                 </div>
-                 </div>
-             </div>
-         </section>
-         <!-- service -->
-         <section class="service">
-             <div class="container">
-                 <div class="row">
-                     <div class="col d-flex justify-content-center">
-                         <h2>Services</h2>
-                     </div>
-                 </div>
-                 <div class="service_info">
-                     <div class="row justify-content-between align-items-center">
-                         <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-                             <h1><strong>Marketing digital</strong></h1>
-                             <p>
-                                Agence de Communication Digitale basée à Casablanca 
-                                et Rabat au Maroc spécialisée en Digital Marketing, 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service -->
+        <section id="service" class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-center mb-5">
+                        <h2 class="text-center">Services</h2>
+                    </div>
+                </div>
+                <div class="service_info ">
+                    <div class="row gap-1 justify-content-center ">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                            <h1><strong>Marketing digital</strong></h1>
+                            <p>
+                                Agence de Communication Digitale basée à Casablanca
+                                et Rabat au Maroc spécialisée en Digital Marketing,
                                 génération de leads, community management,
-                             </p>
-                         </div>
-                         <div class="col-lg-4 col-md-6 col-sm-12  mt-2">
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12  mt-2">
                             <h1><strong>SEO & SEA</strong></h1>
                             <p>
-                                Nos consultants SEO et SEA vous accompagnent dans votre stratégie de référencement naturel et payant pour maximiser votre visibilité en ligne
+                                Nos consultants SEO et SEA vous accompagnent dans votre stratégie de référencement
+                                naturel et payant pour maximiser votre visibilité en ligne
                             </p>
-                         </div>
-                         <div class="col-lg-4 col-md-6 col-sm-12  mt-2">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12  mt-2">
                             <h1><strong>Création site web</strong></h1>
                             <p>
-                                Casablanca - Confiez la création de votre site web à notre équipe dévouée et expérimentée. Nous répondrons à tous vos besoins de développement et conception
+                                Casablanca - Confiez la création de votre site web à notre équipe dévouée et
+                                expérimentée. Nous répondrons à tous vos besoins de développement et conception
                             </p>
-                         </div>
-                         <div class="col-lg-4 col-md-6 col-sm-12  mt-2">
-                             <h1><strong>e-Commerce</strong></h1>
-                             <p>
-                                Notre agence web maitrise tous les aspects graphiques, techniques et marketing pour mener à bien la création de votre site e-commerce, suivant votre besoin.
-                             </p>
-                         </div>
-                         <div class="col-lg-4 col-md-6 col-sm-12  mt-2">
-                             <h1><strong>Applications</strong></h1>
-                             <p>Flexi Apps est une agence de développement des applications web et mobiles spécialisée dans la conception et le développement mobile sur Android et IOS</p>
-                       </div>
-                         <div class="col-lg-4 col-md-6 col-sm-12  mt-2">
-                             <h1><strong>Audiovisual</strong></h1>
-                             <p>Agence vidéo pour les entreprises : film corporate, publicité, motion design. Création de contenus vidéos et production audiovisuelle.</p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </section>
-         <!-- Offres -->
-          <section class="offre">
-              <div class="container">
-                  <div class="row">
-                      <div class="col d-flex justify-content-center">
-                          <h2>Offres</h2>
-                      </div> 
-                  </div>
-                  <div class="info_offre">
-                      <div class="row justify-content-around align-items-center">
-                          <div class="col-lg-3 col-md-3 col-sm-6 mt-2">
-                              <h2>Pack Lancement de Marque</h2>
-                              <div class="pack_info">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12  mt-2">
+                            <h1><strong>e-Commerce</strong></h1>
+                            <p>
+                                Notre agence web maitrise tous les aspects graphiques, techniques et marketing pour
+                                mener à bien la création de votre site e-commerce, suivant votre besoin.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12  mt-2">
+                            <h1><strong>Applications</strong></h1>
+                            <p>Flexi Apps est une agence de développement des applications web et mobiles spécialisée
+                                dans la conception et le développement mobile sur Android et IOS</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12  mt-2">
+                            <h1><strong>Audiovisual</strong></h1>
+                            <p>Agence vidéo pour les entreprises : film corporate, publicité, motion design. Création de
+                                contenus vidéos et production audiovisuelle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Offres -->
+        <section id="offre" class="offre">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-center mb-5">
+                        <h2>Offres</h2>
+                    </div>
+                </div>
+                <div class="info_offre">
+                    <div class="row justify-content-around align-items-center">
+                        <div data-aos="fade-right" class="niveau1 col-lg-3 col-md-3 col-sm-6 mt-2">
+                            <h2>Pack Lancement de Marque</h2>
+                            <div class="pack_info">
                                 <div>
                                     <i class="fa-solid fa-check"></i>
                                     <p>Création de Logos Professionnels</p>
@@ -197,11 +215,11 @@
                                     <h1>à partir de 18 900 DH seulement</h1>
                                     <button class="btn">PLUS D'INFO</button>
                                 </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-3 col-sm-6 mt-2">
-                              <h2>Pack Lancement de Marque</h2>
-                              <div class="pack_info">
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="niveau2 col-lg-3 col-md-3 col-sm-6 mt-2">
+                            <h2>Pack Lancement de Marque</h2>
+                            <div class="pack_info">
                                 <div>
                                     <i class="fa-solid fa-check"></i>
                                     <p>Création de Logos Professionnels</p>
@@ -226,11 +244,11 @@
                                     <h1 class="text-prix">à partir de 18 900 DH seulement</h1>
                                     <button class="btn">PLUS D'INFO</button>
                                 </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-3 col-sm-6 mt-2">
-                              <h2>Pack Lancement de Marque</h2>
-                              <div class="pack_info">
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" class="niveau3 col-lg-3 col-md-3 col-sm-6 mt-2">
+                            <h2>Pack Lancement de Marque</h2>
+                            <div class="pack_info">
                                 <div>
                                     <i class="fa-solid fa-check"></i>
                                     <p>Création de Logos Professionnels</p>
@@ -255,20 +273,20 @@
                                     <h1>à partir de 18 900 DH seulement</h1>
                                     <button class="btn">PLUS D'INFO</button>
                                 </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
-              </div>
-          </section>
-          <!-- Secteur d'activités -->
-         <section class="secteur">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Secteur d'activités -->
+        <section id="secteur" class="secteur">
             <div class="container">
                 <div class="row d-flex flex-column">
-                    <div class="col d-flex justify-content-center">
-                          <h2>Secteur d'activités</h2>
-                    </div> 
+                    <div class="col d-flex justify-content-center mb-5">
+                        <h2>Secteur d'activités</h2>
+                    </div>
                     <div class="carousel-logo m-auto p-2">
                         <div class="img">
                             <img src="./img/img/1629990311120.jpeg" alt="">
@@ -287,42 +305,111 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- Ils nous ont fait confiance -->
-          <section class="avis">
+        </section>
+        <!-- Ils nous ont fait confiance -->
+        <section id="avis" class="avis">
             <div class="container">
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
-                          <h2>Ils nous ont fait confiance</h2>
-                    </div> 
+                    <div class="col d-flex justify-content-center mb-5">
+                        <h2>Ils nous ont fait confiance</h2>
+                    </div>
                     <div class="row justify-content-center mt-5 gap-3 ">
-                    <div class="card p-2" style="width: 18rem;">
-                    <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">oussama</h5>
-                        <p class="card-text">Le Pack de Lancement de Projet de Vasycom a été un véritable coup de pouce pour notre entreprise naissante. Leur expertise en branding a vraiment fait la différence.</p>
-                    </div>
-                    </div>
-                    <div class="card p-2" style="width: 18rem;">
-                    <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Amine</h5>
-                        <p class="card-text">Propriétaire d'un magasin spécialisé dans la vente d'abayas palestiniennes, le pack niveau 2 de la transformation digitale avec Vasycom a été une expérience fluide et fructueuse. Leurs solutions numériques ont optimisé nos processus et boosté notre efficacité.</p>
-                    </div>
-                    </div>
-                    <div class="card p-2" style="width: 18rem;">
-                    <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Inass</h5>
-                        <p class="card-text">Entrepreneur spécialisé dans la vente d'équipements de pâtisserie, nous recommandons vivement le Pack Mensuel en Marketing Digital de Vasycom. Leur expertise nous a permis d'atteindre nos objectifs de croissance.</p>
-                    </div>
-                    </div>
+                        <div class="card p-2" style="width: 18rem;">
+                            <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">oussama</h5>
+                                <p class="card-text">Le Pack de Lancement de Projet de Vasycom a été un véritable coup
+                                    de pouce pour notre entreprise naissante. Leur expertise en branding a vraiment fait
+                                    la différence.</p>
+                            </div>
+                        </div>
+                        <div class="card p-2" style="width: 18rem;">
+                            <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Amine</h5>
+                                <p class="card-text">Propriétaire d'un magasin spécialisé dans la vente d'abayas
+                                    palestiniennes, le pack niveau 2 de la transformation digitale avec Vasycom a été
+                                    une expérience fluide et fructueuse. Leurs solutions numériques ont optimisé nos
+                                    processus et boosté notre efficacité.</p>
+                            </div>
+                        </div>
+                        <div class="card p-2" style="width: 18rem;">
+                            <img src="./img/img/1629990311120.jpeg" class="card-img-top m-auto" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Inass</h5>
+                                <p class="card-text">Entrepreneur spécialisé dans la vente d'équipements de pâtisserie,
+                                    nous recommandons vivement le Pack Mensuel en Marketing Digital de Vasycom. Leur
+                                    expertise nous a permis d'atteindre nos objectifs de croissance.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </section>
-     </main>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-center ">
+                        <h2>Contactez-nous</h2>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="form_contact mt-5">
+                        <form action="" method="post" class="w-50 m-auto">
+                            <div class="mb-3 d-flex gap-3 justify-content-center">
+                                <div class="champ">
+                                    <label for="name" class="form-label">Nom complet </label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Entrez votre nom" required>
+                                </div>
+                                <div class="champ">
+                                    <label for="name" class="form-label">Numéro de téléphone </label>
+                                    <input type="tel" class="form-control" id="tel" name="tel"
+                                        placeholder="Entrez votre numéro" required>
+                                </div>
+                            </div>
+                            <div class="mb-3  d-flex gap-3 justify-content-center">
+                                <div class="champ">
+                                    <label for="email" class="form-label">Adresse Email</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Entrez votre  email" required>
+                                </div>
+                                <div class="champ">
+                                    <label for="email" class="form-label">Ville </label>
+                                    <input type="text" class="form-control" id="ville" name="ville"
+                                        placeholder="Entrez votre ville" required>
+                                </div>
+                            </div>
+                            <button  type="submit" class="btn m-auto d-block">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <p>© 2023 Workly. Tous droits reservé.</p>
+                </div>
+            </div>
+        </div>
+        <div id="scrollToTopBtn" class="scroll-on">
+            <div class="scroll">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+    </footer>
     <!-- bootstrap js -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- main js -->
+    <script src="main.js"></script>
+
 </body>
+
 </html>
